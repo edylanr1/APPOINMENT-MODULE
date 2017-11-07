@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>UNIVERSAL SIDEBAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;z-index:5;background-color:#333333;width: 300px; ;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()"style="color:white;height:53px;background-color:#931D23;display: inline;">&#9776;&emsp;&emsp;&emsp;&emsp;INSTITUTE CLINIC</button>
+
+     
+      
+    
+
+    <p style="text-align:center;">
+      <img src="people.png" class="w3-circle" alt="Norway" style="width:50%;">
+    </p>
+
+    <p style="text-align:center;padding-bottom: 0px;border:0px">
+      <a style="font-size: 15px; color:white; font-style: Arial">CHED CASTILLON</a><br>
+      <a style="font-size: 12px; color:white; font-style: Arial; font-style: italic;">Nurse</a>
+    </p>
+
+
+    <p>
+      <a href="#" class="w3-bar-item w3-button"style="color:#F7D852">HOMEPAGE</a>
+      <a href="#" class="w3-bar-item w3-button"style="color:white">LOGBOOK</a>
+      <a href="#" class="w3-bar-item w3-button"style="color:white">MEDICAL RECORDS</a>
+      <a href="#" class="w3-bar-item w3-button"style="color:white">DENTAL RECORDS</a>
+      <a href="#" class="w3-bar-item w3-button"style="color:white">LOGOUT</a>
+    </p>
+
+  </div>
+
+  <div id="main">
+    
+      <div class="container"style="background-color:#A41D21;height: 53px;">
+        <p>
+         <button id="openNav" class="w3-button " onclick="w3_open()" style="color:white;padding-top: 13px">&#9776;</button>
+         <a style="display: inline;color:white;font-style:Arial;font-size: 25px;padding-top:px;"></a>
+        </p>
+  </div>
+
+
+   <div class="w3-container">
+    <img src="chart.jpg" alt="INSERT CONTENTS HERE" style="width:50%;margin-left: 400px;margin-top: 50px;margin-bottom: 30px;">
+  </div>
+
+
+
+<script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+</script>
+
+</body>
+</html>
